@@ -1,5 +1,31 @@
 {
   "dependencies": {
-    "@makechtec/tezcatl-cli": "^1.0.6"
-  }
+    "@makechtec/tezcatl-cli": "^1.0.6",
+    "@makechtec/tezcatl-preset-default": "^1.0.5",
+    "@types/node": "^17.0.42"
+  },
+  "bin":{
+    "zalihui": "./bin/index.mjs"
+  },
+  "name": "@makechtec/zalihui",
+  "description": "1. Leer todos los archivos 2. concatenar todos los archivos 3. escribir el archivo de destino 4. encontrar todos los imports 5. eliminar duplicados 6. colocar los imports al inicio 7. encontrar todos los export default 8. reemplazarlos por export solos.",
+  "version": "1.0.0",
+  "main": "bin/index.mjs",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angeldomp49/zalihui.git"
+  },
+  "author": "makechtec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angeldomp49/zalihui/issues"
+  },
+  "homepage": "https://github.com/angeldomp49/zalihui#readme"
 }

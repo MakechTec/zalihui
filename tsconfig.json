@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "downlevelIteration": true,
+        "outDir": "./src",
+        "moduleResolution": "node",
+        "module":"CommonJS"
+    },
+    "files":[
+      "./src/Zalihui.ts",
+    ]
+  }
