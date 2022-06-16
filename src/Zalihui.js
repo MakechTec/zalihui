@@ -38,7 +38,7 @@ var Zalihui = /** @class */ (function () {
         var targetFileWithoutImports = this.removeAllImports(targetFile, matchesAll);
         var importsAdded = this.appendImports(targetFileWithoutImports, matchesNoRepeat);
         var withoutExportDefaults = this.removeAllExportDefaults(importsAdded);
-        fs.writeFileSync(tezcatl_cli_1.CLI.getArgumentValue("target").value, withoutExportDefaults);
+        tezcatl_cli_1.Writter.writeFile(tezcatl_cli_1.CLI.getArgumentValue("target").value, withoutExportDefaults);
     };
     Zalihui.prototype.removeAllExportDefaults = function (text) {
         var regE = new RegExp(EXPORT_DEFAULT_STATEMENT, "g");

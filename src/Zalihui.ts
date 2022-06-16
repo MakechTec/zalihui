@@ -1,4 +1,4 @@
-import { CLI, Argument } from "@makechtec/tezcatl-cli";
+import { CLI, Argument, Writter } from "@makechtec/tezcatl-cli";
 import * as fs from "node:fs";
 
 export class Zalihui{
@@ -10,7 +10,7 @@ export class Zalihui{
         let importsAdded = this.appendImports(targetFileWithoutImports, matchesNoRepeat);
         let withoutExportDefaults = this.removeAllExportDefaults(importsAdded);
 
-        fs.writeFileSync(CLI.getArgumentValue("target").value, withoutExportDefaults);
+        Writter.writeFile(CLI.getArgumentValue("target").value, withoutExportDefaults);
     }
 
     removeAllExportDefaults(text: string){
