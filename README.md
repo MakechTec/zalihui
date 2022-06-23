@@ -1,28 +1,14 @@
+# Zalihui #
+
+This is a CLI tool for merge source files into one.
+
+This first implementation only concatenates the files with javascript ES6 syntax.
 
 
-1. Leer todos los archivos
-2. concatenar todos los archivos
-3. escribir el archivo de destino
-4. encontrar todos los imports
-5. eliminar duplicados
-6. colocar los imports al inicio
-7. encontrar todos los export default
-8. reemplazarlos por export solos.
+## Usage ##
 
-[
-    {
-        content: "abc",
-    },
-    {
-        content: "kj",
-    },
-    {
-        content: "abc",
-    },
-    {
-        content: "pooop",
-    },
-    {
-        content: "jkr",
-    },
-]
+    $ zalihui source1=path1.js source2=path2.js ... target=path.js
+
+## installation ##
+
+    $ npm install location=global @makechtec/zalihui
